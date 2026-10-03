@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>A1 Delicious Takeaway</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     NAVIGATION
+========================================== -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🍽️ A1 Delicious Takeaway
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="#home">Home</a>
+
+            <a href="#menu">Menu</a>
+
+            <a href="#cart">Cart 🛒</a>
+
+            <a href="#checkout">Checkout</a>
+
+            <a href="#about">About</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ==========================================
+     HOME
+========================================== -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <div>
+
+            <h1>
+                A1 Delicious Takeaway
+            </h1>
+
+            <p>
+                Delicious food made with love.
+            </p>
+
+            <p>
+                Fresh • Tasty • Affordable
+            </p>
+
+            <a href="#menu"
+               class="main-button">
+
+                View Menu
+
+            </a>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img src="images/chicken_kebab.png"
+                 alt="Chicken Kebab">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     MENU
+========================================== -->
+
+<section id="menu" class="section">
+
+    <h2>Our Menu</h2>
+
+
+    <!-- STARTERS -->
+
+    <h3 class="category-title">
+        Starters
+    </h3>
+
+
+    <div class="menu-grid">
+
+
+        <div class="food-card">
+
+            <div class="food-image">
+
+                <img src="images/chicken_kebab.png"
+                     alt="Chicken Kebab">
+
+            </div>
+
+            <h3>Chicken Kebab</h3>
+
+            <p>₹200</p>
+
+            <button
+                onclick="addToCart('Chicken Kebab', 200)">
+
+                Add Order
+
+            </button>
+
+        </div>
+
+
+
+        <div class="food-card">
+
+            <div class="food-image">
+                🍗
+            </div>
+
+            <h3>Dragon Chicken</h3>
+
+            <p>₹200</p>
+
+            <button
+                onclick="addToCart('Dragon Chicken', 200)">
+
+                Add Order
+
+            </button>
+
+        </div>
+
+
+
+        <div class="food-card">
+
+            <div class="food-image">
+                🍗
+            </div>
+
+            <h3>Chilly Chicken</h3>
+
+            <p>₹200</p>
+
+            <button
+                onclick="addToCart('Chilly Chicken', 200)">
+
+                Add Order
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- MAIN COURSE -->
+
+    <h3 class="category-title">
+        Main Course
+    </h3>
+
+
+    <div class="menu-grid">
+
+
+        <div class="food-card">
+
+            <div class="food-image">
+                🍲
+            </div>
+
+            <h3>Haleem</h3>
+
+            <p>₹350</p>
+
+            <button
+                onclick="addToCart('Haleem', 350)">
+
+                Add Order
+
+            </button>
+
+        </div>
+
+
+
+        <div class="food-card">
+
+            <div class="food-image">
+                🍗
+            </div>
+
+            <h3>Red Chicken</h3>
+
+            <p>₹400</p>
+
+            <button
+                onclick="addToCart('Red Chicken', 400)">
+
+                Add Order
+
+            </button>
+
+        </div>
+
+
+
+        <div class="food-card">
+
+            <div class="food-image">
+
+                <img src="images/biryani.png"
+                     alt="Chicken Biryani">
+
+            </div>
+
+            <h3>Chicken Biryani</h3>
+
+            <p>₹300</p>
+
+            <button
+                onclick="addToCart('Chicken Biryani', 300)">
+
+                Add Order
+
+            </button>
+
+        </div>
+
+
+
+        <div class="food-card">
+
+            <div class="food-image">
+                🍛
+            </div>
+
+            <h3>Mutton Biryani</h3>
+
+            <p>₹300</p>
+
+            <button
+                onclick="addToCart('Mutton Biryani', 300)">
+
+                Add Order
+
+            </button>
+
+        </div>
+
+
+
+        <div class="food-card">
+
+            <div class="food-image">
+                🍲
+            </div>
+
+            <h3>Dal Fry</h3>
+
+            <p>₹100</p>
+
+            <button
+                onclick="addToCart('Dal Fry', 100)">
+
+                Add Order
+
+            </button>
+
+        </div>
+
+
+
+        <div class="food-card">
+
+            <div class="food-image">
+                🍗
+            </div>
+
+            <h3>White Cheese Chicken</h3>
+
+            <p>₹500</p>
+
+            <button
+                onclick="addToCart('White Cheese Chicken', 500)">
+
+                Add Order
+
+            </button>
+
+        </div>
+
+
+
+        <div class="food-card">
+
+            <div class="food-image">
+                🍛
+            </div>
+
+            <h3>Pepper & Lemon Gravy</h3>
+
+            <p>Chicken ₹300 / Mutton ₹800</p>
+
+            <button
+                onclick="addToCart('Pepper & Lemon Gravy - Chicken', 300)">
+
+                Chicken ₹300
+
+            </button>
+
+            <button
+                onclick="addToCart('Pepper & Lemon Gravy - Mutton', 800)">
+
+                Mutton ₹800
+
+            </button>
+
+        </div>
+
+
+
+        <div class="food-card">
+
+            <div class="food-image">
+                🍛
+            </div>
+
+            <h3>Khorma</h3>
+
+            <p>Chicken ₹100 / Mutton ₹700</p>
+
+            <button
+                onclick="addToCart('Khorma - Chicken', 100)">
+
+                Chicken ₹100
+
+            </button>
+
+            <button
+                onclick="addToCart('Khorma - Mutton', 700)">
+
+                Mutton ₹700
+
+            </button>
+
+        </div>
+
+
+
+        <div class="food-card">
+
+            <div class="food-image">
+                🍲
+            </div>
+
+            <h3>Sri Lankan Dal</h3>
+
+            <p>₹200</p>
+
+            <button
+                onclick="addToCart('Sri Lankan Dal', 200)">
+
+                Add Order
+
+            </button>
+
+        </div>
+
+
+
+        <div class="food-card">
+
+            <div class="food-image">
+                🍗
+            </div>
+
+            <h3>Butter Chicken</h3>
+
+            <p>₹450</p>
+
+            <button
+                onclick="addToCart('Butter Chicken', 450)">
+
+                Add Order
+
+            </button>
+
+        </div>
+
+
+
+        <div class="food-card">
+
+            <div class="food-image">
+                🍛
+            </div>
+
+            <h3>Katt and Kofta</h3>
+
+            <p>₹300</p>
+
+            <button
+                onclick="addToCart('Katt and Kofta', 300)">
+
+                Add Order
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- RICE -->
+
+    <h3 class="category-title">
+        Rice
+    </h3>
+
+
+    <div class="menu-grid">
+
+
+        <div class="food-card">
+
+            <div class="food-image">
+                🍚
+            </div>
+
+            <h3>Ghee Rice</h3>
+
+            <p>₹100</p>
+
+            <button
+                onclick="addToCart('Ghee Rice', 100)">
+
+                Add Order
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- DRINKS -->
+
+    <h3 class="category-title">
+        Drinks
+    </h3>
+
+
+    <div class="menu-grid">
+
+
+        <div class="food-card">
+
+            <div class="food-image">
+                🥤
+            </div>
+
+            <h3>Lime Soda</h3>
+
+            <p>₹50</p>
+
+            <button
+                onclick="addToCart('Lime Soda', 50)">
+
+                Add Order
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- DESSERTS -->
+
+    <h3 class="category-title">
+        Desserts
+    </h3>
+
+
+    <div class="menu-grid">
+
+
+        <div class="food-card">
+
+            <div class="food-image">
+                🍮
+            </div>
+
+            <h3>Shahi Tukda</h3>
+
+            <p>₹50</p>
+
+            <button
+                onclick="addToCart('Shahi Tukda', 50)">
+
+                Add Order
+
+            </button>
+
+        </div>
+
+
+
+        <div class="food-card">
+
+            <div class="food-image">
+                🥕
+            </div>
+
+            <h3>Carrot Halwa</h3>
+
+            <p>₹400/kg</p>
+
+            <button
+                onclick="addToCart('Carrot Halwa', 400)">
+
+                Add Order
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- SNACKS -->
+
+    <h3 class="category-title">
+        Snacks
+    </h3>
+
+
+    <div class="menu-grid">
+
+
+        <div class="food-card">
+
+            <div class="food-image">
+                🥟
+            </div>
+
+            <h3>Samosa</h3>
+
+            <p>₹20</p>
+
+            <button
+                onclick="addToCart('Samosa', 20)">
+
+                Add Order
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     CART
+========================================== -->
+
+<section id="cart" class="section">
+
+    <h2>Your Cart</h2>
+
+
+    <div id="cart-items">
+
+        <p>Your cart is empty.</p>
+
+    </div>
+
+
+    <h3 id="cart-total">
+        Total: ₹0
+    </h3>
+
+</section>
+
+
+
+<!-- ==========================================
+     CHECKOUT
+========================================== -->
+
+<section id="checkout" class="section">
+
+    <h2>Checkout</h2>
+
+
+    <form id="order-form">
+
+
+        <label for="customer-name">
+            Name
+        </label>
+
+        <input
+            type="text"
+            id="customer-name"
+            placeholder="Enter your name"
+            required
+        >
+
+
+
+        <label for="customer-phone">
+            Phone
+        </label>
+
+        <input
+            type="tel"
+            id="customer-phone"
+            placeholder="Enter your phone number"
+            required
+        >
+
+
+
+        <label for="customer-address">
+            Address
+        </label>
+
+        <textarea
+            id="customer-address"
+            placeholder="Enter your address"
+            required
+        ></textarea>
+
+
+
+        <label>
+            Order Type
+        </label>
+
+
+        <div class="radio-group">
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="order-type"
+                    value="Delivery"
+                    checked
+                >
+
+                Delivery
+
+            </label>
+
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="order-type"
+                    value="Pickup"
+                >
+
+                Pickup
+
+            </label>
+
+        </div>
+
+
+
+        <button
+            type="submit"
+            class="place-order-button">
+
+            Place Order
+
+        </button>
+
+
+    </form>
+
+</section>
+
+
+
+<!-- ==========================================
+     CONFIRMATION
+========================================== -->
+
+<section id="confirmation"
+         class="section confirmation">
+
+    <h2>
+        ✅ Order Confirmed!
+    </h2>
+
+
+    <div id="order-summary">
+
+    </div>
+
+
+    <!-- WHATSAPP BUTTON -->
+
+    <a
+        id="whatsapp-order-button"
+        href="#"
+        target="_blank"
+        class="whatsapp-button"
+        style="display: none;"
+    >
+
+        📱 Send Order on WhatsApp
+
+    </a>
+
+
+</section>
+
+
+
+<!-- ==========================================
+     ABOUT
+========================================== -->
+
+<section id="about" class="section">
+
+    <h2>About Us</h2>
+
+
+    <p>
+
+        Welcome to A1 Delicious Takeaway!
+
+        We serve delicious and freshly prepared
+        food at affordable prices.
+
+        Our goal is to provide tasty food
+        and great service to our customers.
+
+    </p>
+
+</section>
+
+
+
+<!-- ==========================================
+     CONTACT
+========================================== -->
+
+<section id="contact" class="section">
+
+    <h2>Contact Us</h2>
+
+
+    <p>
+        📞 Phone:
+        +91 8884537786
+    </p>
+
+
+    <p>
+        📱 WhatsApp:
+        +91 8884537786
+    </p>
+
+
+    <a
+        href="https://wa.me/918884537786"
+        target="_blank"
+        class="whatsapp-button"
+    >
+
+        💬 Chat on WhatsApp
+
+    </a>
+
+</section>
+
+
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+
+<footer>
+
+    <p>
+        © 2026 A1 Delicious Takeaway
+    </p>
+
+    <p>
+        Delicious food, made with love ❤️
+    </p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
